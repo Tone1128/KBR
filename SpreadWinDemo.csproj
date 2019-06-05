@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10CEE78B-1324-404E-91DF-8A9F1FF119C8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SpreadWinDemo</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SpreadWinDemo</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>C:\Program Files (x86)\ComponentOne\Spread.NET 7\Windows Forms\v7.0.2002\bin\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Chart, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Chart.Design, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Design, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="GrapeCity.Win.Spread.InputMan.CellType.Design, Version=9.20.20153.0, Culture=neutral, PublicKeyToken=327c3516b1b18457" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GCVersion.cs" />
+    <Content Include="Resources\App.ico" />
+    <EmbeddedResource Include="Features\AutoComplete.resx">
+      <DependentUpon>AutoComplete.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Borders.resx">
+      <DependentUpon>Borders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\CameraShapeForm.resx">
+      <DependentUpon>CameraShapeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Celltypes.resx">
+      <DependentUpon>Celltypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\ChildControls.resx">
+      <DependentUpon>ChildControls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\ConditionalFormat.resx">
+      <DependentUpon>ConditionalFormat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Databinding.resx">
+      <DependentUpon>Databinding.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\DragDrop.resx">
+      <DependentUpon>DragDrop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\DragFill.resx">
+      <DependentUpon>DragFill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\EditCustomAxis.resx">
+      <DependentUpon>EditCustomAxis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Filtering.resx">
+      <DependentUpon>Filtering.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Formulas.resx">
+      <DependentUpon>Formulas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\FreezingRowsColumns.resx">
+      <DependentUpon>FreezingRowsColumns.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Getvalues.resx">
+      <DependentUpon>Getvalues.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Grouping.resx">
+      <DependentUpon>Grouping.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Headerfooter.resx">
+      <DependentUpon>Headerfooter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Hierarchy.resx">
+      <DependentUpon>Hierarchy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\ImportExportExcel.resx">
+      <DependentUpon>ImportExportExcel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Merging.resx">
+      <DependentUpon>Merging.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\MoveRowCol.resx">
+      <DependentUpon>MoveRowCol.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\MultipleHeaders.resx">
+      <DependentUpon>MultipleHeaders.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Notes.resx">
+      <DependentUpon>Notes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\OperationModes.resx">
+      <DependentUpon>OperationModes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\PageSetup.resx">
+      <DependentUpon>PageSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\PDFExport.resx">
+      <DependentUpon>PDFExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Printing.resx">
+      <DependentUpon>Printing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\PrintOpts.resx">
+      <DependentUpon>PrintOpts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\RangeGroup.resx">
+      <DependentUpon>RangeGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Shapes.resx">
+      <DependentUpon>Shapes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Sort.resx">
+      <DependentUpon>Sort.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\Spans.resx">
+      <DependentUpon>Spans.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\SparkLineForm.resx">
+      <DependentUpon>SparkLineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\SparklineSelectDataForm.resx">
+      <DependentUpon>SparklineSelectDataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Features\SpreadChartDemo.resx">
+      <DependentUpon>SpreadChartDemo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Resources\babyd.PNG" />
+    <EmbeddedResource Include="Resources\contactinfo.gif" />
+    <EmbeddedResource Include="Resources\creditcard.jpg" />
+    <EmbeddedResource Include="Resources\download.png" />
+    <EmbeddedResource Include="Resources\english.gif" />
+    <EmbeddedResource Include="Resources\face.GIF" />
+    <EmbeddedResource Include="Resources\face_happy.GIF" />
+    <EmbeddedResource Include="Resources\face_sad.GIF" />
+    <EmbeddedResource Include="Resources\flag_blue.jpg" />
+    <EmbeddedResource Include="Resources\flag_green.jpg" />
+    <EmbeddedResource Include="Resources\flag_red.jpg" />
+    <EmbeddedResource Include="Resources\forums.png" />
+    <EmbeddedResource Include="Resources\giftsm.gif" />
+    <EmbeddedResource Include="Resources\globe.gif" />
+    <EmbeddedResource Include="Resources\history.gif" />
+    <EmbeddedResource Include="Resources\math.gif" />
+    <EmbeddedResource Include="Resources\music.gif" />
+    <EmbeddedResource Include="Resources\science.gif" />
+    <EmbeddedResource Include="Resources\website.png" />
+    <EmbeddedResource Include="agedReceivable.xml" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Features\AutoComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\AutoComplete.Designer.cs">
+      <DependentUpon>AutoComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Borders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Borders.Designer.cs">
+      <DependentUpon>Borders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\BulletChart.cs" />
+    <Compile Include="Features\CameraShapeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\CameraShapeForm.designer.cs">
+      <DependentUpon>CameraShapeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Celltypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\CheckedListComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Features\ChildControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\ChildControls.Designer.cs">
+      <DependentUpon>ChildControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ConditionalFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\ConditionalFormat.Designer.cs">
+      <DependentUpon>ConditionalFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\customborders.cs" />
+    <Compile Include="Features\CustomChildControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Features\Databinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\DragDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\DragDrop.Designer.cs">
+      <DependentUpon>DragDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DragFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\DragFill.Designer.cs">
+      <DependentUpon>DragFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\EditCustomAxis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Filtering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Filtering.designer.cs">
+      <DependentUpon>Filtering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Formulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Formulas.designer.cs">
+      <DependentUpon>Formulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FreezingRowsColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\FreezingRowsColumns.Designer.cs">
+      <DependentUpon>FreezingRowsColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Getvalues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Grouping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Grouping.Designer.cs">
+      <DependentUpon>Grouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Headerfooter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Hierarchy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\ImportExportExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\ImportExportExcel.Designer.cs">
+      <DependentUpon>ImportExportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Merging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Module1.cs" />
+    <Compile Include="Features\MoveRowCol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\MoveRowCol.Designer.cs">
+      <DependentUpon>MoveRowCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\MultipleHeaders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\MultipleHeaders.Designer.cs">
+      <DependentUpon>MultipleHeaders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Notes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Notes.Designer.cs">
+      <DependentUpon>Notes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\OperationModes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\PageSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\PDFExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\PDFExport.designer.cs">
+      <DependentUpon>PDFExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\PrintOpts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\RangeGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\RangeGroup.Designer.cs">
+      <DependentUpon>RangeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Shapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Shapes.Designer.cs">
+      <DependentUpon>Shapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Sort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Sort.Designer.cs">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Spans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\Spans.Designer.cs">
+      <DependentUpon>Spans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SparkLineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\SparkLineForm.designer.cs">
+      <DependentUpon>SparkLineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SparklineSelectDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\SparklineSelectDataForm.designer.cs">
+      <DependentUpon>SparklineSelectDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SpreadChartDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Features\SpreadChartDemo.designer.cs">
+      <DependentUpon>SpreadChartDemo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Features\.MySCMServerInfo" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

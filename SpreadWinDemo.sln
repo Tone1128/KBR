@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadWinDemoStandAlone", "SpreadWinDemoStandAlone\SpreadWinDemoStandAlone.csproj", "{7733F93A-F901-4FEC-87B4-077621340B44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadWinDemo", "SpreadWinDemo.csproj", "{10CEE78B-1324-404E-91DF-8A9F1FF119C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SperadSheet", "SperadSheet\SperadSheet.csproj", "{037E340D-FEF5-4EA6-BE16-8BE92ED4A8B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7733F93A-F901-4FEC-87B4-077621340B44}.Debug|x86.ActiveCfg = Debug|x86
+		{7733F93A-F901-4FEC-87B4-077621340B44}.Debug|x86.Build.0 = Debug|x86
+		{7733F93A-F901-4FEC-87B4-077621340B44}.Release|x86.ActiveCfg = Release|x86
+		{7733F93A-F901-4FEC-87B4-077621340B44}.Release|x86.Build.0 = Release|x86
+		{10CEE78B-1324-404E-91DF-8A9F1FF119C8}.Debug|x86.ActiveCfg = Debug|x86
+		{10CEE78B-1324-404E-91DF-8A9F1FF119C8}.Debug|x86.Build.0 = Debug|x86
+		{10CEE78B-1324-404E-91DF-8A9F1FF119C8}.Release|x86.ActiveCfg = Release|x86
+		{10CEE78B-1324-404E-91DF-8A9F1FF119C8}.Release|x86.Build.0 = Release|x86
+		{037E340D-FEF5-4EA6-BE16-8BE92ED4A8B3}.Debug|x86.ActiveCfg = Debug|x86
+		{037E340D-FEF5-4EA6-BE16-8BE92ED4A8B3}.Debug|x86.Build.0 = Debug|x86
+		{037E340D-FEF5-4EA6-BE16-8BE92ED4A8B3}.Release|x86.ActiveCfg = Release|x86
+		{037E340D-FEF5-4EA6-BE16-8BE92ED4A8B3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
